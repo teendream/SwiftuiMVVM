@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		645595922A0BAF48000CC1E0 /* InterviewAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645595912A0BAF48000CC1E0 /* InterviewAppApp.swift */; };
-		645595942A0BAF48000CC1E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645595932A0BAF48000CC1E0 /* ContentView.swift */; };
+		645595922A0BAF48000CC1E0 /* InterviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645595912A0BAF48000CC1E0 /* InterviewApp.swift */; };
+		645595942A0BAF48000CC1E0 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645595932A0BAF48000CC1E0 /* SettingView.swift */; };
 		645595962A0BAF48000CC1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 645595952A0BAF48000CC1E0 /* Assets.xcassets */; };
 		645595992A0BAF48000CC1E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 645595982A0BAF48000CC1E0 /* Preview Assets.xcassets */; };
+		645595A02A0BAF6B000CC1E0 /* FirebaseSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6455959F2A0BAF6B000CC1E0 /* FirebaseSetting.swift */; };
+		645595A22A0BAF84000CC1E0 /* SettingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645595A12A0BAF84000CC1E0 /* SettingProvider.swift */; };
+		645595A42A0BAF9C000CC1E0 /* SettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645595A32A0BAF9C000CC1E0 /* SettingsRepository.swift */; };
+		645595A62A0BB1C3000CC1E0 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645595A52A0BB1C3000CC1E0 /* SettingViewModel.swift */; };
+		645595AB2A0C029B000CC1E0 /* SettingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645595AA2A0C029B000CC1E0 /* SettingType.swift */; };
+		645595AD2A0C02B9000CC1E0 /* ProtectedModeSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645595AC2A0C02B9000CC1E0 /* ProtectedModeSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6455958E2A0BAF48000CC1E0 /* InterviewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		645595912A0BAF48000CC1E0 /* InterviewAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewAppApp.swift; sourceTree = "<group>"; };
-		645595932A0BAF48000CC1E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		645595912A0BAF48000CC1E0 /* InterviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewApp.swift; sourceTree = "<group>"; };
+		645595932A0BAF48000CC1E0 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		645595952A0BAF48000CC1E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		645595982A0BAF48000CC1E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6455959F2A0BAF6B000CC1E0 /* FirebaseSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSetting.swift; sourceTree = "<group>"; };
+		645595A12A0BAF84000CC1E0 /* SettingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProvider.swift; sourceTree = "<group>"; };
+		645595A32A0BAF9C000CC1E0 /* SettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepository.swift; sourceTree = "<group>"; };
+		645595A52A0BB1C3000CC1E0 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		645595AA2A0C029B000CC1E0 /* SettingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingType.swift; sourceTree = "<group>"; };
+		645595AC2A0C02B9000CC1E0 /* ProtectedModeSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedModeSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,13 @@
 		645595902A0BAF48000CC1E0 /* InterviewApp */ = {
 			isa = PBXGroup;
 			children = (
-				645595912A0BAF48000CC1E0 /* InterviewAppApp.swift */,
-				645595932A0BAF48000CC1E0 /* ContentView.swift */,
+				645595A92A0C023D000CC1E0 /* ViewModel */,
+				645595A82A0C0236000CC1E0 /* View */,
+				645595A72A0C0231000CC1E0 /* Model */,
+				645595912A0BAF48000CC1E0 /* InterviewApp.swift */,
+				6455959F2A0BAF6B000CC1E0 /* FirebaseSetting.swift */,
+				645595A12A0BAF84000CC1E0 /* SettingProvider.swift */,
+				645595A32A0BAF9C000CC1E0 /* SettingsRepository.swift */,
 				645595952A0BAF48000CC1E0 /* Assets.xcassets */,
 				645595972A0BAF48000CC1E0 /* Preview Content */,
 			);
@@ -65,6 +82,31 @@
 				645595982A0BAF48000CC1E0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		645595A72A0C0231000CC1E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				645595AA2A0C029B000CC1E0 /* SettingType.swift */,
+				645595AC2A0C02B9000CC1E0 /* ProtectedModeSetting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		645595A82A0C0236000CC1E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				645595932A0BAF48000CC1E0 /* SettingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		645595A92A0C023D000CC1E0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				645595A52A0BB1C3000CC1E0 /* SettingViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				645595942A0BAF48000CC1E0 /* ContentView.swift in Sources */,
-				645595922A0BAF48000CC1E0 /* InterviewAppApp.swift in Sources */,
+				645595A02A0BAF6B000CC1E0 /* FirebaseSetting.swift in Sources */,
+				645595A62A0BB1C3000CC1E0 /* SettingViewModel.swift in Sources */,
+				645595AD2A0C02B9000CC1E0 /* ProtectedModeSetting.swift in Sources */,
+				645595A22A0BAF84000CC1E0 /* SettingProvider.swift in Sources */,
+				645595942A0BAF48000CC1E0 /* SettingView.swift in Sources */,
+				645595AB2A0C029B000CC1E0 /* SettingType.swift in Sources */,
+				645595922A0BAF48000CC1E0 /* InterviewApp.swift in Sources */,
+				645595A42A0BAF9C000CC1E0 /* SettingsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
