@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FirebaseSetting: FirebaseBaseSetting {
+class FirebaseSetting: FirebaseBaseSetting, SettingType {
 
     private var value: AnyObject?
     private var key: String = ""

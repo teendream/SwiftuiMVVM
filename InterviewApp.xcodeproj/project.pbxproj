@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		641F062D2A0D3188007607C2 /* PicSizeSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641F062C2A0D3188007607C2 /* PicSizeSetting.swift */; };
 		645595922A0BAF48000CC1E0 /* InterviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645595912A0BAF48000CC1E0 /* InterviewApp.swift */; };
 		645595942A0BAF48000CC1E0 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645595932A0BAF48000CC1E0 /* SettingView.swift */; };
 		645595962A0BAF48000CC1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 645595952A0BAF48000CC1E0 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		641F062C2A0D3188007607C2 /* PicSizeSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicSizeSetting.swift; sourceTree = "<group>"; };
 		6455958E2A0BAF48000CC1E0 /* InterviewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		645595912A0BAF48000CC1E0 /* InterviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewApp.swift; sourceTree = "<group>"; };
 		645595932A0BAF48000CC1E0 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
@@ -88,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				645595AA2A0C029B000CC1E0 /* SettingType.swift */,
-				645595AC2A0C02B9000CC1E0 /* ProtectedModeSetting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -97,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				645595932A0BAF48000CC1E0 /* SettingView.swift */,
+				645595AC2A0C02B9000CC1E0 /* ProtectedModeSetting.swift */,
+				641F062C2A0D3188007607C2 /* PicSizeSetting.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				645595A02A0BAF6B000CC1E0 /* FirebaseSetting.swift in Sources */,
+				641F062D2A0D3188007607C2 /* PicSizeSetting.swift in Sources */,
 				645595A62A0BB1C3000CC1E0 /* SettingViewModel.swift in Sources */,
 				645595AD2A0C02B9000CC1E0 /* ProtectedModeSetting.swift in Sources */,
 				645595A22A0BAF84000CC1E0 /* SettingProvider.swift in Sources */,

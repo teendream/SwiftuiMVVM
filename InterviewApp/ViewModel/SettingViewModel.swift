@@ -9,20 +9,41 @@ import Foundation
 
 class SettingViewModel: ObservableObject {
     @Published var settings: [SettingType] = []
+
     private let settingProvider: SettingProvider
-    private let settingsRepository: SettingsRepository
-    
-    init(settingProvider: SettingProvider, settingsRepository: SettingsRepository) {
+    private let settingRepository: SettingsRepository
+
+    init(settingProvider: SettingProvider, settingRepository: SettingsRepository) {
         self.settingProvider = settingProvider
-        self.settingsRepository = settingsRepository
-        self.settings = settingProvider.settings
+        self.settingRepository = settingRepository
+
+        setupArr()
     }
-    
+
+    private func setupArr() {
+        let cloudSettings = settingProvider.getCloudSettings()
+
+        for cloudSetting in cloudSettings {
+            let setting: SettingType
+            if cloudSetting.type == Bool.self {
+                setting = BoolSetting(key: cloudSetting.key, title: cloudSetting.title, value: cloudSetting.value)
+            } else if cloudSetting.type == Int.self {
+                setting = IntSetting(key: cloudSetting.key, title: cloudSetting.title, value: cloudSetting.value)
+            } else {
+                fatalError("Unknown type: \(cloudSetting.type)")
+            }
+            settings.append(setting)
+        }
+    }
+
     func saveSettings() {
         for setting in settings {
             if let firebaseSetting = setting as? FirebaseSetting {
-                settingsRepository.save(firebaseSetting)
+                settingRepository.save(firebaseSetting)
             }
         }
     }
 }
+
+
+

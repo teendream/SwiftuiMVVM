@@ -8,12 +8,11 @@
 import Foundation
 import SwiftUI
 
-struct ProtectedModeSetting: SettingType {
-    var title: String = "Protect Documents from editing"
-    @State var value: Bool = false
-    
-    @ViewBuilder
-    private func makeUIElement() -> some View {
+struct ProtectedModeSetting: View, SettingType {
+    var title: String
+    @Binding var value: Bool
+
+    var body: some View {
         HStack {
             Text(title)
                 .fixedSize(horizontal: true, vertical: true)

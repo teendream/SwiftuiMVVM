@@ -27,23 +27,6 @@ struct SettingProvider {
     FirebaseSetting(AppPrefs.CONTRAS_ADDRESS_EXCEL_COLUMN,
                     AppPrefs.ExcelColumns.contrasAddressExcelColumn().getObjectValue(),
                     { value in AppPrefs.ExcelColumns.contrasAddressExcelColumn().setValue(value as! String) })
-
-    var settings: [SettingType] {
-        return [
-            ProtectedModeSetting()
-        ]
-    }
-    
-    var settings: [SettingType] {
-        private static let cloudShowDocHeader =
-            FirebaseSetting(AppPrefs.SHOW_DOC_HEADER_KEY,
-                            AppPrefs.showDocHeader().getObjectValue() as Bool,
-                            { value in AppPrefs.showDocHeader().setValue(value as! Bool) })
-        
-        return [
-            cloudShowDocHeader
-        ]
-    }
     
     private static let cloudOrgName =
     FirebaseSetting(AppPrefs.ORG_NAME,
@@ -54,7 +37,9 @@ struct SettingProvider {
                     AppPrefs.orgInn().getObjectValue(),
                     { value in AppPrefs.orgInn().setValue(value as! String) })
 
-    ...
+    func getCloudShowDocHeader() -> FirebaseSetting {
+        return Self.cloudShowDocHeader
+    }
 
     private static let cloudShowCrop =
     FirebaseSetting(AppPrefs.SHOW_CROP_KEY,
